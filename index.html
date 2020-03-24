@@ -1,0 +1,270 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+
+		<link
+	    rel="stylesheet"
+	    href="prism-atom-dark.css"
+	    type="text/css"
+	    media="screen"
+	  />
+
+	  <script type="text/javascript" src="prism.js"></script>
+	  <script type="text/javascript" src="prism.ruby.js"></script>
+
+	  <title>Nickolas Vu</title>
+	  <meta name="description" content="Nickolas Vu is a professional
+        software engineer specializing in full-stack development.
+        He has extensive experience with Ruby, Rails, JavaScript,
+        and building web applications.">
+	</head>
+
+	<body>
+		<div class="about-container">
+			<ul>
+				<li><a href="#" class="nav-link">About</a></li>
+			  <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+			  <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+			  <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+			  <li class="hire-me"><a href="#hire-me" class="nav-link">Contact</a></li>
+		  </ul>
+			<div class="about">
+				<img src="me.jpg"  class="me" />
+
+				<h1>Nickolas Vu</h1>
+				<h2>DEVELOPER</h2>
+				<hr class="grey"/>
+				<p class="bio">
+					Nickolas Vu is a professional software engineer specializing in full-stack development and a restaurant manager. He provides amazing customer satisfaction and has extensive experience with Ruby, Rails, JavaScript, and building web applications.
+			  </p> 
+		  </div>
+	  </div>
+
+   	<h3 id="code-samples">Code Snippets</h3>
+   	<hr class="yellow">
+
+   	<div class="box">
+   		<h4>Temperature Conversion</h4>
+		  <p>
+		    This Ruby program will prompt the user for a temperature
+		    in degrees Celsius and let the user know what the
+		    corresponding temperature is in Fahrenheit.
+		  </p>
+   	</div>
+
+	  <div class="box">
+<pre><code class="language-ruby">puts &quot;Enter degrees in Celcius:&quot;
+Celsius = gets.chomp
+val1 = Celsius
+val2 = Celsius.to_f
+def temp(val2)
+  return val2 * 1.8 + 32
+end
+greeting = &quot;The temperature is #{temp(val2)} degrees Fahrenheit&quot;
+puts greeting</code></pre>
+   	</div>
+
+   	<br class="clear" />
+
+   	<div class="box">
+<pre><code class="language-ruby">puts &quot;Enter a number.&quot;
+input = gets.chomp
+val = input.to_i
+def ordinal(val)
+	remainder_when_divided_by_10 = val % 10
+	remainder_when_divided_by_100 = val % 100
+	if remainder_when_divided_by_100 == 11 || remainder_when_divided_by_100 == 12 || remainder_when_divided_by_100 == 13
+	  return &quot;That's the #{val}th item!&quot;
+	elsif remainder_when_divided_by_10 == 1
+	  return &quot;That's the #{val}st item!&quot;
+	elsif remainder_when_divided_by_10 == 2
+	  return &quot;That's the #{val}nd item!&quot;
+	elsif remainder_when_divided_by_10 == 3
+	  return &quot;That's the #{val}rd item!&quot;
+	else 
+	  return &quot;That's the #{val}th item!&quot;
+  end
+end
+puts ordinal(val)</code></pre>
+		</div>
+
+		<div class="box">
+		  <h4>Ordinal Challenge</h4>
+		  <p>
+		    This Ruby program will convert a plain number
+		    to the ordinal of the number. So for example,
+		    if the user enters 2, it will display 2nd, if
+		    the user enters 3, it will display 3rd, etc.
+		  </p>
+		</div>
+
+		<br class="clear" />
+
+		<div class="box">
+		  <h4>Foobar</h4>
+		  <p>
+		    This Ruby program is an adaptation of a classic technical
+		    interview problem which displays sequences
+		    of the Foobar pattern.
+		  </p>
+		</div>
+
+		<div class="box">
+<pre><code class="language-ruby">puts &quot;How many digits do you want to see?&quot;
+digits = gets.chomp.to_i
+(1..digits).each do |num|
+  if num % 3 == 0 &amp;&amp; num % 5 == 0
+    puts &quot;FOOBAR&quot;
+  elsif num % 3 == 0
+    puts &quot;FOO&quot;
+  elsif num % 5 == 0
+    puts &quot;BAR&quot;
+  else
+    puts num
+  end
+end</code></pre>
+		</div>
+
+		<br class="clear" />
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
+
+		<div class="box">
+			<h4>Quote Generator</h4>
+			<img src="splurty.png" class="full-width" />
+			<p>
+        A database-powered quote generator with a mobile-first
+        design, using the Ruby on Rails framework, HTML, and CSS.
+        Uses Git and GitHub for version control, and launched
+        on Heroku.
+        <br />
+        <a href="https://splurty-nickolas-vu.herokuapp.com/" class="contact-link">
+      		Splurty
+      	</a>
+        <br />
+        <a href="https://github.com/envy71/awesome-computing-machine" class="contact-link">
+          GitHub
+        </a>
+    	</p>
+		</div>
+
+		<div class="box">
+      <h4>Yelp Clone</h4>
+      <img src="nomster.png" class="full-width" />
+      <p>
+        A Yelp clone that integrates with the Google Maps API
+        and includes features like user comments, star ratings,
+        image uploading, and user authentication.
+        <br />
+        <a href="https://nomster-nickolas-vu.herokuapp.com/" class="contact-link">
+      		Nomster
+      	</a>
+        <br />
+        <a href="https://github.com/envy71/nomster" class="contact-link">
+          GitHub
+        </a>
+      </p>
+  	</div>
+  	<br class="clear" />
+
+    <div class="box">
+      <h4>Two-Sided Market Place</h4>
+      <img src="flixter.png" class="full-width" />
+      <p>
+        A two-sided, video-streaming marketplace platform that
+        features credit card payment capabilities, user role
+        management, complex user interfaces, and advanced
+        database relationships.
+        <br />
+        <a href="https://flixter-nickolas-vu.herokuapp.com/" class="contact-link">
+      		Flixter
+      	</a>
+        <br />
+        <a href="https://github.com/envy71/flixter" class="contact-link">
+          GitHub
+        </a>
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <img src="grammable.png" class="full-width" />
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+        <br />
+        <a href="https://grammable-nickolas-vu.herokuapp.com/" class="contact-link">
+      		Grammable
+      	</a>
+        <br />
+        <a href="https://github.com/envy71/Grammable" class="contact-link">
+          GitHub
+        </a>
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <img src="todoster.png" class="full-width" />
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+        <br />
+        <a href="https://todoster-nickolas-vu.herokuapp.com/" class="contact-link">
+      		Todoster
+      	</a>
+        <br />
+        <a href="https://github.com/envy71/todo" class="contact-link">
+          GitHub
+        </a>
+      </p>
+    </div>
+    <br class="clear" />
+   	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+   	<hr class="yellow" />
+   	<p class="skills-and-tools">
+      Nickolas has developed proficiency and expertise
+      in the following programming languages and
+      comfort with the following tools.
+    </p>
+    <div class="icons">
+	    <img src="github.png" class="icon" />
+	    <img src="rubocop.png" class="icon" />
+	    <img src="trello.png" class="icon" />
+	    <img src="slack.png" class="icon" />
+	    <img src="codeship.png" class="icon" />
+
+	    <br class="clear" />
+	    <img src="skills.png" class="icon" />
+  	</div>
+
+  	<div class="contact-me" id="hire-me">
+  		<h3 class="contact-headline">Contact</h3>
+  		<hr class="yellow" />
+  		<p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via email:
+      </p>
+
+      <p>
+      	<a href="mailto:vu.nickolas@gmail.com" class="contact-link">
+      		vu.nickolas@gmail.com
+      	</a>
+      </p>
+      <p>
+      	<a href="https://github.com/envy71" class="contact-link">
+      		GitHub
+      	</a>
+      </p>
+      <p>
+      	<a href="https://www.linkedin.com/in/nickolas-vu/" class="contact-link">
+      		Linkedin
+      	</a>
+      </p>
+  	</div>
+	</body>
+
+</html>
